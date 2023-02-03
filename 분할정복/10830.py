@@ -1,4 +1,4 @@
-# 행렬 제곱
+""" 행렬 제곱 """
 import sys
 input = sys.stdin.readline
 

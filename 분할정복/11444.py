@@ -1,4 +1,4 @@
-# 피보나치 수열
+""" 피보나치 수 6 """
 import sys
 input = sys.stdin.readline
 
@@ -10,7 +10,7 @@ def multiply(A, B):
 
             # temp[i][j]
             for k in range(2):
-                temp[i][j] += (A[i][k] * B[k][j]) % 1000000
+                temp[i][j] += (A[i][k] * B[k][j]) % 1000000007
     return temp
 
 def power(A, n):
@@ -32,7 +32,7 @@ def mat_vec(A):
     for i in range(2):
         temp = 0
         for j in range(2):
-            temp += (A[i][j] * x[j]) % 1000000
+            temp += (A[i][j] * x[j]) % 1000000007
         ans.append(temp)
     return ans
 
